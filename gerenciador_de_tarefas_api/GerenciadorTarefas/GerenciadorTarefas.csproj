@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20221109231434_UserTable.cs" />
+    <Compile Remove="Migrations\20221109231434_UserTable.Designer.cs" />
+    <Compile Remove="Migrations\20221110110100_TaskTable.cs" />
+    <Compile Remove="Migrations\20221110110100_TaskTable.Designer.cs" />
+    <Compile Remove="Migrations\20221112202341_Table.cs" />
+    <Compile Remove="Migrations\20221112202341_Table.Designer.cs" />
+    <Compile Remove="Models\User.cs" />
+    <Compile Remove="Services\TaskTagService.cs" />
+    <Compile Remove="WeatherForecast.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+</Project>
